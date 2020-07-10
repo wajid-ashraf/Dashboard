@@ -80,6 +80,11 @@
   font-size: .6rem;
 }
 
+.wrapper .form--wrapper form .have--account a,
+.wrapper .form--wrapper form .dont-have--account a {
+  color: #54da71;
+}
+
 .wrapper .form--wrapper .login--btn {
   position: absolute;
   bottom: 0px;
