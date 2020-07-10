@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+$black:#000;
+$white:#fff;
+$border :rgb(45, 206, 80);
+
+
+.wrapper{
+    background-image: url(../../images/reg-bg.jpg);
+    max-width :  1280px;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    color: $white;
+
+   
+    .layer{
+        position: absolute;
+        left: 0;right: 0;bottom: 0;top: 0;
+        background-color: rgba($black,0.5);
+    }
+
+    .logo img{
+        width: 150px;
+        height: 80px;
+    }
+
+    .form--wrapper{
+        max-width: 300px;
+        position: relative;
+        z-index: 4;
+        background-image: linear-gradient(to bottom , $black, rgb(18,18,18));
+
+
+        .form--title{
+            margin: 50px 0px;
+        }
+
+
+        .form-group::after{
+            content: "";
+            width: 100%;
+            border-bottom: 2px solid $border ;
+            position: absolute;
+        }
+
+        .form-group{
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+
+        form{
+            padding: 20px 0px;
+            margin-bottom: 60px;
+            position: relative;
+
+              .form-control{
+                border-radius: 0px;
+                border: 0px;
+                background-color: transparent;
+                text-align: center;
+                color: $white;
+                &:focus{
+                    outline: 0px;
+                     box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
+                }
+               }
+
+               .have--account,
+               .dont-have--account{
+                   position: absolute;
+                   bottom: 0;
+                   right: 0;
+                   font-size: .6rem;
+               }
+
+              
+
+               
+    }
+
+       .login--btn{
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                width: 100%;
+                padding: 0px;
+                background-color: rgb(10,10,10);
+
+                     .btn{
+                  padding: 14px 0px;
+                  border: 0px;
+                  border-radius: 0px;
+                  background-color: transparent;
+                  transition: all 0.5s;
+                  color: $white;
+
+                        &:focus {
+                        outline: 0px;
+                        box-shadow: 0 0rem ;
+                         }
+
+                         &:hover{
+                              background-color: rgb(34, 32, 32);
+                         }
+                }
+
+        } 
+}
+}

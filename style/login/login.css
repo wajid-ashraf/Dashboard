@@ -1,0 +1,111 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.wrapper {
+  background-image: url(../../images/reg-bg.jpg);
+  max-width: 1280px;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.wrapper .layer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper .logo img {
+  width: 150px;
+  height: 80px;
+}
+
+.wrapper .form--wrapper {
+  max-width: 300px;
+  position: relative;
+  z-index: 4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#121212));
+  background-image: linear-gradient(to bottom, #000, #121212);
+}
+
+.wrapper .form--wrapper .form--title {
+  margin: 50px 0px;
+}
+
+.wrapper .form--wrapper .form-group::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid #2dce50;
+  position: absolute;
+}
+
+.wrapper .form--wrapper .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.wrapper .form--wrapper form {
+  padding: 20px 0px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.wrapper .form--wrapper form .form-control {
+  border-radius: 0px;
+  border: 0px;
+  background-color: transparent;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .form--wrapper form .form-control:focus {
+  outline: 0px;
+  -webkit-box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+
+.wrapper .form--wrapper form .have--account,
+.wrapper .form--wrapper form .dont-have--account {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: .6rem;
+}
+
+.wrapper .form--wrapper .login--btn {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0px;
+  background-color: #0a0a0a;
+}
+
+.wrapper .form--wrapper .login--btn .btn {
+  padding: 14px 0px;
+  border: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.wrapper .form--wrapper .login--btn .btn:focus {
+  outline: 0px;
+  -webkit-box-shadow: 0 0rem;
+          box-shadow: 0 0rem;
+}
+
+.wrapper .form--wrapper .login--btn .btn:hover {
+  background-color: #222020;
+}
+/*# sourceMappingURL=login.css.map */
