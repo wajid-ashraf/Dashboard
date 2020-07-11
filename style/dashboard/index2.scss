@@ -1,10 +1,7 @@
-
 * {
   padding: 0px;
   margin: 0px;
 }
-
-
 
 body {
   background-color: #5f5f5f;
@@ -12,32 +9,28 @@ body {
 
 header .top-nav--box {
   background-color: #2c2c2c;
-}
 
-header .logo img {
-  width: 80px;
-  height: 40px;
-}
+  header .logo img {
+    width: 80px;
+    height: 40px;
+  }
 
-header .navbar-nav .nav-link {
-  text-align: center;
-}
-.nav-item{
-  position: relative;
-}
-.activ::after {
-  content: "";
-  position: absolute;
-  width: 15%;
-  border-bottom: 3px solid #2dce50;
-  left: 50%;
-  transform:translateX(-50%);
-  right: 5px;
-  bottom: -2px;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
+  header .navbar-nav .nav-link {
+    text-align: center;
+  }
+  .nav-item {
+    position: relative;
+  }
+  .activ::after {
+    content: "";
+    position: absolute;
+    width: 15%;
+    border-bottom: 3px solid #2dce50;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 5px;
+    bottom: -2px;
+  }
 }
 
 .head-content {
@@ -48,7 +41,7 @@ header .navbar-nav .nav-link {
 .head-content .content {
   padding-top: 80px;
 
-  @media (max-width:568px){
+  @media (max-width: 568px) {
     padding-top: 50px;
   }
 }
@@ -67,8 +60,6 @@ header .navbar-nav .nav-link {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-
-  
 }
 
 @media (max-width: 767px) {
@@ -86,7 +77,7 @@ header .navbar-nav .nav-link {
 .head-content .second--nav .nav-link {
   padding: 3px;
   margin-right: 40px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   position: relative;
 }
 
@@ -104,7 +95,6 @@ header .navbar-nav .nav-link {
   bottom: -2px;
 }
 
-
 // ----------gallery
 
 .gallery--container {
@@ -115,10 +105,9 @@ header .navbar-nav .nav-link {
   display: flex;
   background-color: #7e7873;
 
-//   @media (max-width: 576px) {
-//     overflow-y: scroll;
-// }
-
+  //   @media (max-width: 576px) {
+  //     overflow-y: scroll;
+  // }
 }
 
 .gallery {
@@ -130,103 +119,93 @@ header .navbar-nav .nav-link {
   grid-gap: 5px;
   grid-auto-rows: minmax(150px, 180px);
 
-@media (max-width: 992px) {
-  grid-template-columns: repeat(4, 1fr);
-  
-}
-@media (max-width: 768px) {
-  grid-template-columns: repeat(3, 1fr);
-}
-@media (max-width: 576px){
-  grid-template-columns: repeat(2, 1fr);
-}
-@media (max-width: 492px){
-grid-template-columns: 1fr;
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 492px) {
+    grid-template-columns: 1fr;
     grid-gap: 2px;
+  }
 }
-
-}
-
-
 
 .el {
   background-color: #2c2c2c;
-  transition: all .5s;
+  transition: all 0.5s;
   transform: scale(1);
   position: relative;
 
-  &:hover{
-    transform: scale(.95);
+  &:hover {
+    transform: scale(0.95);
   }
 }
 
-.el1,.el6 {
+.el1,
+.el6 {
   position: relative;
 
-  div{
+  div {
     position: absolute;
     width: 100%;
     height: 100%;
-  color: #2c2c2c;
-  padding:30px 15px;
-  background-color: rgb(144, 186, 226);
+    color: #2c2c2c;
+    padding: 30px 15px;
+    background-color: rgb(144, 186, 226);
 
-  p{
-    font-weight: normal;
-  }
-  
-}
-}
-
-.el2,.el4,.el7{
-background: url(../../images/man-snaping.png);
-background-position: center;
-background-size: cover;
-position: relative;
-
-div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-   &:hover{
-     background-color: rgba(#fff,0.4);
-     padding: 20px;
-   }
-
-  svg{
-    width: 30px;
-    
+    p {
+      font-weight: normal;
+    }
   }
 }
 
+.el2,
+.el4,
+.el7 {
+  background: url(../../images/man-snaping.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: rgba(#fff, 0.4);
+      padding: 20px;
+    }
+
+    svg {
+      width: 30px;
+    }
+  }
 }
-.el4{
+.el4 {
   background: url(../../images/man-selfi.png);
   background-position: center;
-background-size: cover;
+  background-size: cover;
 }
-.el7{
+.el7 {
   background: url(../../images/man-streaming.png);
   background-position: center;
-background-size: cover;
+  background-size: cover;
 }
 
-
-
-
-
-
-
-.el3{
-grid-column: span 2;
+.el3 {
+  grid-column: span 2;
 }
-.el14{
-grid-column: span 2;
-grid-row: span 2;
+.el14 {
+  grid-column: span 2;
+  grid-row: span 2;
 }
-.el15{
-grid-column: span 2;
+.el15 {
+  grid-column: span 2;
 }

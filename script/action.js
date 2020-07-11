@@ -14,3 +14,4 @@ $('#navbarNav .nav-link').click(function (e) {
     $(e.target).addClass('activ');
   }
 });
+  event.preventDefault()
