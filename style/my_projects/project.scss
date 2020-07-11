@@ -72,7 +72,7 @@ header .navbar-nav .nav-link {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
-  grid-auto-rows: minmax(150px, 180px);
+  grid-auto-rows: minmax(150px, 200px);
 
   @media (max-width: 992px) {
     grid-template-columns: repeat(4, 1fr);
@@ -94,6 +94,34 @@ header .navbar-nav .nav-link {
   transition: all 0.5s;
   transform: scale(1);
   position: relative;
+
+  .project--info__box{
+
+    padding: 100px 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($main,0.6);
+
+    .project--detail{
+      position: absolute;
+      bottom: 0;
+
+
+      .project--title{
+      color: $green;
+    }
+
+    .project--desc{
+      color: #fff;
+      line-height: 1rem;
+      font-size: .7rem;
+      text-transform: uppercase;
+    }
+    }
+  }
 
   &:hover {
     transform: scale(0.95);

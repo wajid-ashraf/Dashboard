@@ -120,7 +120,7 @@ header .navbar-nav .nav-link {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
-  grid-auto-rows: minmax(150px, 180px);
+  grid-auto-rows: minmax(150px, 200px);
 }
 
 @media (max-width: 992px) {
