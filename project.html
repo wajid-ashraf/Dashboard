@@ -113,20 +113,55 @@
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-body">
+        <div class="modal-body form-one">
           <div class="container-fluid p-0 ">
             <div class="row justify-content-center">
               <div class="input-form  p-2 w-100" id="client-name">
                <div class="form-title text-white text-center"> <strong>Who is the project for ?</strong></div>
                <div class="form-input"><input type="text " class="border-0 p-2 w-100 text-center" placeholder="Client Name"></div>
                <div class="form-btn py-3">
-                 <button type="button" class="w-100  border-0">Next</button>
+                 <button type="button" class="w-100  border-0 btn-client-name">Next</button>
                </div>
               </div>
             </div>
           </div>
           
         </div>
+        <!-- end form one -->
+        <div class="modal-body form-two d-none">
+          <div class="container-fluid p-0 ">
+            <div class="row justify-content-center">
+              <div class="input-form  p-2 w-100" id="project-name">
+               <div class="form-title text-white text-center"> <strong>What is the project ?</strong></div>
+               <div class="form-input"><input type="text " class="border-0 p-2 w-100 text-center" placeholder="Project Name"></div>
+               <div class="form-btn py-3">
+                 <button type="button" class="w-100  border-0 btn-project-name">Next</button>
+               </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- end form two -->
+         <div class="modal-body form-three d-none">
+          <div class="container-fluid p-0 ">
+            <div class="row justify-content-center">
+              <div class="input-form  p-2 w-100" id="email">
+               <div class="form-title text-white text-center px-3"> <strong>Who would you like to invite to this project ?</strong></div>
+               <div class="form-input"><input type="email " class="border-0 p-2 w-100 text-center" placeholder="Example@123.com">
+               <div class="email-info text-center ">
+                 <p class="text-center">Enter multiple emails separated by comma.</p>
+               </div>
+               </div>
+               <div class="form-btn py-3">
+                 <button type="button" class="w-100  border-0 btn-email" data-dismiss="modal">Next</button>
+               </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- end form three -->
        
       </div>
     </div>

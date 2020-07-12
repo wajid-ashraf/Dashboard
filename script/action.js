@@ -14,4 +14,12 @@ $('#navbarNav .nav-link').click(function (e) {
     $(e.target).addClass('activ');
   }
 });
-  event.preventDefault()
+ 
+$("#mymodal .btn-client-name").click(function (e) {
+  $(".form-one").addClass("d-none");
+  $(".form-two").removeClass("d-none");
+ })
+$("#mymodal .btn-project-name").click(function (e) {
+  $(".form-two").addClass("d-none");
+  $(".form-three").removeClass("d-none");
+ })

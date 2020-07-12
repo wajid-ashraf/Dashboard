@@ -225,6 +225,15 @@ header .navbar-nav .nav-link {
   border-bottom: 2px solid #2dce50;
 }
 
+.modal-body .input-form .form-input .email-info {
+  position: absolute;
+  line-height: .8rem;
+  font-size: .7rem;
+  bottom: -100%;
+  width: 100%;
+  color: #7e7873;
+}
+
 .modal-body .input-form .form-btn button {
   position: absolute;
   bottom: 0px;

@@ -166,6 +166,7 @@ header .navbar-nav .nav-link {
   background-color: transparent;
   margin-top: 100px;
   border: 0px;
+  
 }
 .modal-body .input-form{
   background-color: $primary;
@@ -198,7 +199,17 @@ header .navbar-nav .nav-link {
         padding-bottom: 5px;
         bottom: -5px;
         border-bottom: 2px solid $green;
-      }}
+      }
+      .email-info{
+        position: absolute;
+        line-height: .8rem;
+        font-size: .7rem;
+        bottom: -100%;
+        width: 100%;
+        color: $secodary;
+      }
+
+      }
   .form-btn button{
       position: absolute;
       bottom: 0px;
