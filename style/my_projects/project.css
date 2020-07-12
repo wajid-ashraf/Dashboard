@@ -5,6 +5,7 @@
 
 body {
   background-color: #7e7873;
+  position: relative;
 }
 
 header .top-nav--box {
@@ -46,7 +47,6 @@ header .navbar-nav .nav-link {
 
 .gallery--container {
   width: 100vw;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,7 +129,7 @@ header .navbar-nav .nav-link {
 .el .project--info__box .project--detail .project--desc {
   color: #fff;
   line-height: 1rem;
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
 }
 
@@ -164,7 +164,96 @@ header .navbar-nav .nav-link {
           align-items: center;
 }
 
+.el2 .add--project__btn #open--modal {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.el2 .add--project__btn #open--modal:focus {
+  outline: 0px;
+  -webkit-box-shadow: 0 0rem;
+          box-shadow: 0 0rem;
+}
+
 .el2 .add--project__btn img {
   width: 60px;
+}
+
+.modal-content {
+  background-color: transparent;
+  margin-top: 100px;
+  border: 0px;
+}
+
+.modal-body .input-form {
+  background-color: #464646;
+  width: 330px !important;
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body .input-form .form-title {
+  margin-top: 100px;
+}
+
+.modal-body .input-form .form-input {
+  position: relative;
+  margin: 60px 0px;
+}
+
+.modal-body .input-form .form-input input {
+  width: 100%;
+  color: #fff;
+  background-color: transparent;
+}
+
+.modal-body .input-form .form-input input:focus {
+  outline: 0px;
+  -webkit-box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+
+.modal-body .input-form .form-input::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  padding-bottom: 5px;
+  bottom: -5px;
+  border-bottom: 2px solid #2dce50;
+}
+
+.modal-body .input-form .form-btn button {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  padding: 10px 0px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2c2c2c;
+}
+
+.modal-body .input-form .form-btn button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  padding-bottom: 5px;
+  bottom: 0px;
+  border-bottom: 3px solid #2dce50;
+}
+
+.modal-body .input-form .form-btn button:hover {
+  background-color: rgba(48, 45, 45, 0.856);
+}
+
+.modal-body .input-form .form-btn button:focus {
+  outline: 0px;
+  -webkit-box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
 }
 /*# sourceMappingURL=project.css.map */
