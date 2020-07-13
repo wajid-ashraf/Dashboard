@@ -54,13 +54,14 @@ header .navbar-nav .nav-link {
 
 .my--projects {
   position: absolute;
-  top: 90px;
+  top: 110px;
   color: #2dce50;
+  font-size: 1.5rem;
 }
 
 .gallery {
   width: 100%;
-  margin: 15px 0px;
+  margin: 50px 0px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -166,8 +167,9 @@ header .navbar-nav .nav-link {
 
 .el2 .add--project__btn #open--modal {
   background: transparent;
-  border: 1px solid #fff;
+  border: 0px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .el2 .add--project__btn #open--modal:focus {

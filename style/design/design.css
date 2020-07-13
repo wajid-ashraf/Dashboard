@@ -5,10 +5,14 @@
 
 body {
   background-color: #5f5f5f;
+  position: relative;
+  height: 170vh;
 }
 
 header .top-nav--box {
   background-color: #2c2c2c;
+  position: relative;
+  z-index: 5555;
 }
 
 header .logo img {
@@ -82,16 +86,23 @@ header .navbar-nav .nav-link {
   bottom: -2px;
 }
 
+.design-page--title {
+  line-height: 80px;
+  padding-left: 20px;
+  color: #2dce50;
+  font-size: 1.5rem;
+}
+
 .design-cards {
   width: 100%;
-  height: 250px;
+  height: 230px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .design-cards .card {
@@ -99,13 +110,18 @@ header .navbar-nav .nav-link {
   border: 0px;
 }
 
-.design-cards .card div {
+.design-cards .card a {
+  height: 100%;
+  text-decoration: none;
+}
+
+.design-cards .card .design-card {
   width: 100%;
   height: 100%;
   border: 2px solid #635f5b;
   border-radius: 8px;
   background-color: #2c2c2c;
-  color: #fff;
+  color: #7e7873;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,6 +136,51 @@ header .navbar-nav .nav-link {
       justify-content: space-around;
 }
 
+.design-cards .design .design-fill {
+  background-color: #cff5ee;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.design-cards .design .design-fill:hover {
+  background-color: #a5ecdf;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.design-cards .num {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #7e7873;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.design-cards .svg {
+  width: 70px;
+  height: 70px;
+}
+
+.design-cards .design-fill--next .svg, .design-cards .design-fill--next .num, .design-cards .design-fill--next .design-name {
+  width: 50px;
+  height: 50px;
+}
+
+.design-cards .add-design {
+  width: 40px;
+}
+
 .design-content {
   width: 100vw;
   min-height: 100vh;
@@ -127,5 +188,204 @@ header .navbar-nav .nav-link {
   display: -ms-flexbox;
   display: flex;
   background-color: #7e7873;
+}
+
+.open-design--board {
+  margin-top: 50px;
+  position: absolute;
+  background-color: #7e7873;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  padding-bottom: 100px;
+}
+
+.open-design--board .head-content {
+  background-color: #464646;
+}
+
+.open-design--board .head-content .design-board--title {
+  font-size: 1.5rem;
+  color: #2dce50;
+}
+
+.open-design--board .head-content .design-board--title button {
+  border: 0px;
+  border: 1px solid #2c2b2b;
+  background-color: #2c2c2c;
+  padding: 0px 8px;
+  line-height: 35px;
+  border-radius: 3px;
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.open-design--board .head-content .design-board--title button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: rgba(34, 33, 33, 0.726);
+}
+
+.open-design--board .head-content .design-board--title button:focus {
+  outline: 0px;
+}
+
+.open-design--board .stopwatch {
+  height: 230px;
+  color: #fff;
+}
+
+.open-design--board .stopwatch .days span, .open-design--board .stopwatch .hour span, .open-design--board .stopwatch .minute span {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .open-design--board .stopwatch .days p, .open-design--board .stopwatch .hour p, .open-design--board .stopwatch .minute p {
+    font-size: 2rem;
+  }
+}
+
+.open-design--board .stopwatch .start {
+  font-size: .8rem;
+}
+
+.open-design--board .stopwatch .calender {
+  padding: 2px 16px;
+  color: #2c2c2c;
+  font-size: .8rem;
+}
+
+.open-design--board .stopwatch .calender .row {
+  background-color: #cff5ee;
+  padding: 4px 0px;
+}
+
+.open-design--board .stopwatch .calender .launch {
+  margin-top: 19px;
+  background-color: #7be3d0;
+}
+
+.open-design--board .stopwatch .calender a {
+  text-decoration: none;
+  color: #2c2c2c;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.open-design--board .stopwatch .calender a:hover {
+  font-weight: bold;
+}
+
+.design-board-page .row {
+  background-color: #2c2c2c;
+  color: #7e7873;
+  border-radius: 5px;
+  margin-top: 80px;
+  position: relative;
+  padding: 0px;
+}
+
+.design-board-page .intro {
+  line-height: 70px;
+}
+
+.design-board-page .instruction {
+  line-height: 30px;
+}
+
+.design-board-page .query {
+  min-height: 130px;
+  position: relative;
+}
+
+.design-board-page .query::after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 100%;
+  height: 85px;
+  border-left: 1px dashed #2c2c2c;
+}
+
+.design-board-page .query::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -84px;
+  height: 85px;
+  border-left: 1px dashed #2c2c2c;
+}
+
+.design-board-page .query h3, .design-board-page .query img {
+  position: absolute;
+}
+
+.design-board-page .query img {
+  top: 50%;
+  right: -35px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 768px) {
+  .design-board-page .query img {
+    top: -25px;
+    right: 5%;
+  }
+}
+
+.design-board-page .query h3 {
+  top: 50%;
+  left: -35px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #2c2c2c;
+}
+
+@media (max-width: 768px) {
+  .design-board-page .query h3 {
+    top: -25px;
+    left: 5%;
+  }
+}
+
+.design-board-page .add-question {
+  position: absolute;
+  left: 48.5%;
+  top: -40%;
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.design-board-page .add-question img {
+  width: 25px;
+  height: 25px;
+  background-color: #7e7873;
+  border-radius: 50%;
+}
+
+.design-board-page #question {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: #7e7873;
+  line-height: 50px;
+}
+
+.design-board-page #question:focus {
+  outline: 0px;
 }
 /*# sourceMappingURL=design.css.map */

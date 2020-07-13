@@ -58,8 +58,10 @@ header .navbar-nav .nav-link {
 }
 .my--projects {
   position: absolute;
-  top: 90px;
+  top: 110px;
   color: $green;
+  font-size: 1.5rem;
+  
 
   //   @media (max-width: 576px) {
   //     overflow-y: scroll;
@@ -68,7 +70,7 @@ header .navbar-nav .nav-link {
 
 .gallery {
   width: 100%;
-  margin: 15px 0px;
+  margin: 50px 0px;
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -146,8 +148,9 @@ header .navbar-nav .nav-link {
     align-items: center;
     #open--modal {
       background: transparent;
-      border: 1px solid #fff;
+      border: 0px;
       border-radius: 3px;
+      cursor: pointer;
       &:focus {
         outline: 0px;
         box-shadow: 0 0rem;

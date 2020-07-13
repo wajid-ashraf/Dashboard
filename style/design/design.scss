@@ -6,13 +6,19 @@ $green: #2dce50;
 $main: #2c2c2c;
 $primary: #464646;
 $secodary: #7e7873;
+$lightsky:rgb(207, 245, 238);
+$text-color:lighten(#fff,15%);
 
 body {
   background-color: #5f5f5f;
+  position: relative;
+  height: 170vh;
 }
 
 header .top-nav--box {
   background-color: #2c2c2c;
+  position: relative;
+  z-index: 5555;
 }
 
 header .logo img {
@@ -61,7 +67,7 @@ header .navbar-nav .nav-link {
   font-size: 0.8rem;
   position: relative;
 
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     margin-right: 20px;
   }
 }
@@ -79,34 +85,77 @@ header .navbar-nav .nav-link {
   right: 5px;
   bottom: -2px;
 }
-
+ .design-page--title{
+   line-height: 80px;
+   padding-left: 20px;
+   color: $green;
+   font-size: 1.5rem;
+ }
 .design-cards {
   width: 100%;
-  height: 250px;
+  height: 230px;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow: scroll;
-
+  overflow: hidden;
   .card {
     background-color: transparent;
     border: 0px;
+    a {
+      height: 100%;
+      text-decoration: none;
+    }
 
-    div {
+    .design-card {
       width: 100%;
       height: 100%;
-      border: 2px solid darken($secodary , 10%);
+      border: 2px solid darken($secodary, 10%);
       border-radius: 8px;
       background-color: $main;
-      color: #fff;
+      color: $secodary;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-
-
     }
   }
- 
+  .design .design-fill {
+    background-color: $lightsky;
+    transform: scale(1);
+    transition: all .4s;
+    cursor: pointer;
+    &:hover{
+    background-color: darken($lightsky,10%);
+      transform: scale(1.02);
+      
+    }
+  }
+
+  .num {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $secodary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .svg {
+    width: 70px;
+    height: 70px;
+   
+  }
+
+  .design-fill--next{
+    .svg,.num,.design-name {
+    width: 50px;
+    height: 50px;
+   
+  }
+  }
+
+  .add-design {
+    width: 40px;
+  }
 }
 
 // ---------
@@ -122,4 +171,202 @@ header .navbar-nav .nav-link {
   //   @media (max-width: 576px) {
   //     overflow-y: scroll;
   // }
+}
+
+
+// design--board-----------
+
+.open-design--board{
+  margin-top: 50px;
+  position: absolute;
+  background-color: $secodary;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  overflow: hidden;
+  transition: all .5s;
+  padding-bottom: 100px;
+ 
+
+  .head-content{
+  background-color: $primary;
+
+  .design-board--title{
+      font-size: 1.5rem;
+      color: $green;
+
+      button{
+        border: 0px;
+        border: 1px solid rgb(44, 43, 43);
+        background-color: $main;
+        padding: 0px 8px;
+        line-height: 35px;
+        border-radius: 3px;
+        color: #fff;
+        transition: all .3s;
+        cursor: pointer;
+        transform: scale(1);
+        &:hover{
+          transform: scale(1.1);
+          // transform: translate(2px, -3px);
+          background-color: rgba(34, 33, 33, 0.726);
+        }
+        &:focus{
+          outline: 0px;
+        }
+      }
+   
+  }
+
+  }
+
+  .stopwatch{
+    height: 230px;
+    color: #fff;
+
+    .days,.hour,.minute{
+      // font-size: 3rem;
+      span{
+        font-size: 1rem;
+      }
+
+      @media (max-width:768px) {
+        p{
+          font-size: 2rem;
+        }
+      }
+    }
+    
+    .start{
+      font-size: .8rem;
+    }
+
+    .calender{
+      padding: 2px 16px;
+      color: $main;
+      font-size: .8rem;
+
+      .row{
+      background-color: $lightsky;
+      padding: 4px 0px;
+      }
+      .launch{
+        margin-top: 19px;
+        background-color: darken($lightsky, 20%);
+      }
+        a{
+          text-decoration: none;
+          color: $main;
+          transition: all .5s;
+          &:hover{
+font-weight: bold;          }
+        }
+
+    }
+
+  }
+
+
+}
+
+// End design--board
+
+.design-board-page
+{
+  .row{
+    background-color: $main;
+    color: $secodary;
+    border-radius: 5px;
+    margin-top: 80px;
+    position: relative;
+    padding: 0px;
+  }
+  .intro{
+    line-height: 70px;
+  }
+  .instruction{
+    line-height: 30px;
+  }
+  .query{
+    min-height:130px ;
+    position: relative;
+
+    &::after{
+      content: "";
+      position: absolute;
+      right: 50%;
+      top: 100%;
+      height: 85px;
+      border-left: 1px dashed $main;
+
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -84px;
+      height: 85px;
+      border-left: 1px dashed $main;
+
+    }
+
+
+    h3, img{
+      position: absolute;
+    }
+    img{
+      top: 50%;
+      right: -35px;
+      transform: translateY(-50%);
+      width:25px;
+      height: 25px;
+      @media (max-width:768px) {
+         top: -25px;
+      right: 5%;
+      }
+    
+    }
+    h3{
+      top: 50%;
+      left: -35px;
+      transform: translateY(-50%);
+      color: $main;
+      @media (max-width:768px) {
+         top: -25px;
+      left: 5%;
+      }
+     
+    }
+  }
+  .add-question{
+    position: absolute;
+    left: 48.5%;
+    top: -40%;
+    // transform: translateX(-25%);
+    text-decoration: none;
+    color: $main;
+
+    img{
+       width:25px;
+      height: 25px;
+      background-color: $secodary;
+      border-radius: 50%;
+      
+    }
+  }
+
+  #question{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: $main;
+    color:$secodary ;
+    line-height: 50px;
+    &:focus{
+      outline: 0px;
+    }
+  }
 }

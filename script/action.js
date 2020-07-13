@@ -23,3 +23,15 @@ $("#mymodal .btn-project-name").click(function (e) {
   $(".form-two").addClass("d-none");
   $(".form-three").removeClass("d-none");
  })
+
+$(".design-fill").click(function (e) {
+  $("#board").addClass("open-design--board");
+  $("#board").removeClass("d-none");
+  
+ })
+
+$("#board .close-btn").click(function (e) {
+  $("#board").removeClass("open-design--board");
+  $("#board").addClass("d-none");
+  
+ })
