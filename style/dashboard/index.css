@@ -84,10 +84,17 @@ header .navbar-nav .nav-link {
 }
 
 .head-content .second--nav .nav-link {
+  line-height: 25px;
   padding: 3px;
   margin-right: 40px;
   font-size: .8rem;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .head-content .second--nav .nav-link {
+    margin-right: 20px;
+  }
 }
 
 .head-content .second--nav .nav-link:hover {

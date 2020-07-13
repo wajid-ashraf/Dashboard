@@ -75,10 +75,14 @@ header .top-nav--box {
 }
 
 .head-content .second--nav .nav-link {
+  line-height: 25px;
   padding: 3px;
   margin-right: 40px;
   font-size: 0.8rem;
   position: relative;
+  @media (max-width:768px) {
+    margin-right: 20px;
+  }
 }
 
 .head-content .second--nav .nav-link:hover {
