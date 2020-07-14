@@ -1,0 +1,195 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #5f5f5f;
+}
+
+header .top-nav--box {
+  background-color: #2c2c2c;
+}
+
+header .logo img {
+  width: 80px;
+  height: 40px;
+}
+
+header .navbar-nav .nav-link {
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.activ::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  border-bottom: 3px solid #2dce50;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  right: 5px;
+  bottom: -2px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.head-content {
+  width: 100%;
+  padding-top: 50px;
+  background-color: #2c2c2c;
+}
+
+.upload {
+  height: 270px;
+  background-color: #464646;
+}
+
+.upload img {
+  width: 140px;
+  height: 140px;
+}
+
+.head-content .second--nav .nav-link {
+  line-height: 25px;
+  padding: 3px;
+  margin-right: 40px;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .head-content .second--nav .nav-link {
+    margin-right: 20px;
+  }
+}
+
+.head-content .second--nav .nav-link:hover {
+  color: #2dce50;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  border-bottom: 3px solid #2dce50;
+  right: 5px;
+  bottom: -2px;
+}
+
+.table-box .table {
+  background-color: #393939;
+}
+
+.table-box thead, .table-box th {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.table-box .city {
+  color: #2dce50;
+}
+
+.table-box th {
+  color: #fff;
+  font-weight: 400;
+}
+
+.table-box thead,
+.table-box tr {
+  height: 3.8rem;
+}
+
+.table-box th div,
+.table-box td div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px;
+}
+
+.table-box th div div,
+.table-box td div div {
+  padding-right: 0px;
+}
+
+.table-box th div .chk,
+.table-box td div .chk {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #7e7873;
+}
+
+.table-box th div .chked,
+.table-box td div .chked {
+  border: 5px solid #54da71;
+  border-style: inset;
+}
+
+.table-box th div .progres,
+.table-box td div .progres {
+  height: 20px;
+  display: inline-block;
+  min-width: 100px;
+  border: 1px solid #7e7873;
+  padding: 0px;
+}
+
+.table-box th div .progres-bar,
+.table-box td div .progres-bar {
+  height: 100%;
+  width: 50%;
+  background-color: #56524e;
+  padding: 0px;
+}
+
+.table-box td img {
+  width: 30px;
+  height: 30px;
+}
+
+.table-box td,
+.table-box th {
+  vertical-align: middle !important;
+}
+
+.table-box .del-btn {
+  border: 0px;
+  background-color: transparent;
+  outline: 0px;
+  cursor: pointer;
+}
+
+.table-box .del-btn:hover i {
+  color: #dad6d6;
+}
+
+.table-box .dlet {
+  color: #8b8580;
+  font-size: 1.4rem;
+  display: inline-block;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.table-2 {
+  margin: 50px 0px;
+}
+/*# sourceMappingURL=Recruitment.css.map */

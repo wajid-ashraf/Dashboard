@@ -24,7 +24,7 @@ $("#mymodal .btn-project-name").click(function (e) {
   $(".form-three").removeClass("d-none");
  })
 
-$(".design-fill").click(function (e) {
+$(".design-fill--next").click(function (e) {
   $("#board").addClass("open-design--board");
   $("#board").removeClass("d-none");
   
@@ -35,3 +35,18 @@ $("#board .close-btn").click(function (e) {
   $("#board").addClass("d-none");
   
  })
+
+
+// $(".chk").click(function (e){
+//   $("this").toggleClass("chked")
+// });
+console.log(document.getElementsByClassName("chk"));
+
+let allEL = document.getElementsByClassName("chk");
+allEL.addEventListener("click", function () {
+  allEL.classList.toggle("chked");
+});
+
+
+
+

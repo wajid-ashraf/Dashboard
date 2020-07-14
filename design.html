@@ -36,7 +36,7 @@
                 <a class="nav-link " href="design.html">DESIGN</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">RECUITMENT</a>
+                <a class="nav-link" href="Recruitment.html">RECUITMENT</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="#">DATA</a>
@@ -62,7 +62,7 @@
             
               <div class="design-card design-fill">
                 <p class="num">01</p>
-                <p class="svg"><img src="./images/edit.png" class="w-100 h-100" alt=""></p>
+                <p class="svg"><img src="./images/social-media.png" class="w-100 h-100" alt=""></p>
                 <p class="desing-name">HOMEWORK</p>
               </div>
           
@@ -77,10 +77,11 @@
            
           </div>
           <div class=" col-6 col-sm-4 col-md-3 col-lg-2 card design design-3">
-            <div class="design-card">
-              <div class="add-design">
-                <a href="#"> <img src="./images/add-med.png" class="w-100" alt=""></a></div>
-            </div>
+           <a href="#"> <div class="design-card design-fill--next">
+                <p class="num"><img src="./images/quot.png" class="w-100" alt=""></p>
+                <p class="svg"><img src="./images/edit.png" class="w-100 h-100" alt=""></p>
+                <p class="comment"><img src="./images/msg.png" class="w-100" alt=""></p>
+              </div></a>
           </div>
           <div class=" col-6 col-sm-4 col-md-3 col-lg-2 card design design-4">
             <div class="design-card"> </div>
@@ -109,7 +110,7 @@
                     <a class="nav-link " href="design.html">DESIGN</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">RECUITMENT</a>
+                    <a class="nav-link" href="Recruitment.html">RECUITMENT</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link " href="#">DATA</a>
@@ -134,7 +135,7 @@
   <div class=" d-none " id="board">
     <section class="head-content">
       <div class="container">
-        <div class="row design-board--title pt-4 justify-content-between">
+        <div class="row design-board--title px-2 px-md-o pt-4 justify-content-between">
           <div class="design-card--name"><strong>HOMEWORK</strong></div>
         <div class="close-btn ">
        <button type="button"> <small> CLOSE </small><span >&times;</span></button>
@@ -146,9 +147,9 @@
             <div class="start text-center"><small>START</small></div>
             <div class="calender">
               <div class="row justify-content-center">
-                <div class="auto px-0 px-sm-2">DAY</div>
-                <div class="auto px-2">MONTH</div>
-                <div class="auto px-0 px-sm-2">YEAR</div>
+                <div class="auto px-0 px-sm-2">DD</div>
+                <div class="auto px-2">MM</div>
+                <div class="auto px-0 px-sm-2">YYYY</div>
               </div>
             </div>
           </div>
@@ -157,9 +158,9 @@
             <div class="start text-center"><small>END</small></div>
             <div class="calender">
               <div class="row justify-content-center">
-                <div class="auto px-0 px-sm-2 ">DAY</div>
-                <div class="auto px-2">MONTH</div>
-                <div class="auto px-0 px-sm-2">YEAR</div>
+                <div class="auto px-0 px-sm-2 ">DD</div>
+                <div class="auto px-2">MM</div>
+                <div class="auto px-0 px-sm-2">YYYY</div>
               </div>
             </div>
           </div>
@@ -212,17 +213,19 @@
     <div class="design-board-page">
       <div class="container px-5">
         <div class="row py-2 flex-column justify-content-center align-content-center">
-          <div class="text-center intro">INTRODUCTION</div>
-          <div class="text-center instruction"><small>Click to edit your introduction</small></div>
+          <div class="text-center intro"><input type="text" class="border-0" placeholder="INTRODUCTION" name="Introduction" id="intro"></div>
+          <div class="text-center instruction"><small class="mx-3">Click to edit your introduction</small></div>
         </div>
         <div class="row query ">
+          <div class="front-camra camra text-secondary"><small>Front camra</small></div>
+          <div class="rare-camra camra text-secondary"><small>Rare camra</small></div>
           <img src="./images/open-menu.png" alt="">
           <div class="text-center intro"><textarea class="text-center pt-5" placeholder="Your Question Here..." name="question" id="question" ></textarea></div>
           <div class="text-center instruction"></div>
-          <h3>Q1</h3>
+          <p>Question 1</p>
+            <div class="add-question"><a href="#" class="w-100 h-100"></a><img id="add-q" src="./images/add-dark.png" alt=""><small>NEW QUESTION</small></div>
         </div>
         <div class="row py-2 flex-column justify-content-center align-content-center">
-          <a href="#" > <span class="add-question"><img src="./images/add-dark.png" alt=""> <small>NEW QUESTION</small></span></a>
           <div class="text-center intro">CLOSE</div>
           <div class="text-center instruction"><small class="px-4">Thank you for taking the time to share your answer with us.</small></div>
         </div>
