@@ -37,14 +37,8 @@ $("#board .close-btn").click(function (e) {
  })
 
 
-// $(".chk").click(function (e){
-//   $("this").toggleClass("chked")
-// });
-console.log(document.getElementsByClassName("chk"));
-
-let allEL = document.getElementsByClassName("chk");
-allEL.addEventListener("click", function () {
-  allEL.classList.toggle("chked");
+$(".chk").click(function (e){
+  $(this).toggleClass("chked")
 });
 
 
