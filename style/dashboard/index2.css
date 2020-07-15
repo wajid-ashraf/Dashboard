@@ -5,6 +5,8 @@
 
 body {
   background-color: #5f5f5f;
+  max-width: 1280px;
+  margin: 0px auto;
 }
 
 header .top-nav--box {

@@ -85,7 +85,7 @@ header .navbar-nav .nav-link {
 // TABLE-------------
 
 .table-box {
-  // overflow-x: scroll;
+  overflow-x: scroll;
   .table{
     background-color: darken($primary,5%);
   }

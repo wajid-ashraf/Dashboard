@@ -84,6 +84,10 @@ header .navbar-nav .nav-link {
   bottom: -2px;
 }
 
+.table-box {
+  overflow-x: scroll;
+}
+
 .table-box .table {
   background-color: #393939;
 }

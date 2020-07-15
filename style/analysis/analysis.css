@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #5f5f5f;
+  background-color: #7e7873;
 }
 
 header .top-nav--box {
@@ -41,46 +41,7 @@ header .navbar-nav .nav-link {
 }
 
 .head-content {
-  width: 100%;
   background-color: #464646;
-}
-
-.head-content .content {
-  padding-top: 80px;
-}
-
-@media (max-width: 568px) {
-  .head-content .content {
-    padding-top: 50px;
-  }
-}
-
-.head-content .content h3 {
-  color: #2dce50;
-}
-
-.head-content .content p {
-  color: #fff;
-}
-
-.head-content .head-content-image {
-  height: 170px;
-  background-image: url(../../images/map.png);
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 767px) {
-  .head-content .head-content-image {
-    background-size: 60%;
-  }
-}
-
-@media (min-width: 993px) {
-  .head-content .head-content-image {
-    background-size: 70%;
-  }
 }
 
 .head-content .second--nav .nav-link {
@@ -110,12 +71,53 @@ header .navbar-nav .nav-link {
   bottom: -2px;
 }
 
+main {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+section.themes-sec {
+  padding-top: 35px;
+}
+
+section.themes-sec strong {
+  color: #464646;
+  padding: 18px 0px 0px 12px;
+  cursor: default;
+}
+
+section.themes-sec button {
+  background-color: #464646;
+  border: 2px solid rgba(211, 211, 211, 0.692);
+  padding: 8px 16px;
+  border-radius: 5px;
+  outline: 0px;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+  color: rgba(211, 211, 211, 0.692);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section.themes-sec button:hover {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #2c2c2c;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  border: 2px solid rgba(211, 211, 211, 0.692);
+}
+
 .gallery--container {
   width: 100vw;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #7e7873;
 }
 
@@ -124,10 +126,10 @@ header .navbar-nav .nav-link {
   margin: 15px 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: minmax(150px, 200px);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 8px;
+  grid-auto-rows: minmax(230px, 270px);
 }
 
 @media (max-width: 992px) {
@@ -159,17 +161,318 @@ header .navbar-nav .nav-link {
   }
 }
 
+.el-1 {
+  background: url(../../images/girl-shoping.png);
+}
+
+.el-2 {
+  background: url(../../images/man-walk.png);
+}
+
+.el-3 {
+  background: url(../../images/yoga.png);
+}
+
 .el {
+  cursor: pointer;
   background-color: #2c2c2c;
   -webkit-transition: all .5s;
   transition: all .5s;
   -webkit-transform: scale(1);
           transform: scale(1);
   position: relative;
+  border-radius: 3px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .el:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+
+.el .el-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.el .el-content p {
+  color: #fff;
+  padding: 15px 10px;
+  font-size: .8rem;
+}
+
+.fill {
+  border: 2px solid lightgray;
+}
+
+.fill:hover {
+  border: 2px solid #fab443;
+}
+
+.info-each-theme-sec {
+  padding-top: 30px;
+  position: absolute;
+  background-color: #fff;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #7e7873;
+}
+
+.info-each-theme-sec .close-btn {
+  background-color: transparent;
+  border: 2px solid #464646;
+  padding: 8px 16px;
+  border-radius: 5px;
+  outline: 0px;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+  color: #464646;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.info-each-theme-sec .close-btn:hover {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #464646;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  color: #7e7873;
+  border: 2px solid rgba(211, 211, 211, 0.692);
+}
+
+.theme-info-header {
+  min-height: 270px;
+}
+
+.theme-info-header-pic {
+  height: 270px;
+  background: url(../../images/girl-shoping.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid lightgray;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.theme-info-header-pic:hover {
+  border: 2px solid #fab443;
+}
+
+@media (max-width: 567px) {
+  .theme-info-header-pic {
+    background-position: top;
+  }
+}
+
+.theme-info-header-content {
+  height: 270px;
+  padding-right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 567px) {
+  .theme-info-header-content {
+    padding-right: 15px;
+  }
+}
+
+.theme-info-header-content p {
+  background-color: #7e7873;
+  font-weight: 600;
+  color: lightgray;
+  background-color: #464646;
+}
+
+.theme-info-header-content .intro {
+  padding: 17px 10px;
+  height: 20%;
+}
+
+@media (max-width: 567px) {
+  .theme-info-header-content .intro {
+    margin-top: 15px;
+  }
+}
+
+.theme-info-header-content .def {
+  height: 75%;
+  margin-bottom: 0;
+  padding: 20px 10px;
+}
+
+.theme-info-detail .container {
+  display: -ms-grid;
+  display: grid;
+  padding-left: 0px;
+  padding-right: 0px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(250px, 270px);
+  overflow: hidden;
+  grid-gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .theme-info-detail .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 467px) {
+  .theme-info-detail .container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.theme-info-detail .container div {
+  position: relative;
+}
+
+.theme-info-detail .sidebar {
+  position: fixed;
+  padding: 0px;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2c2c2c;
+  z-index: 999;
+}
+
+.theme-info-detail .chk-box {
+  width: 15px;
+  height: 15px;
+  border: 2px soli #7e7873;
+  background-color: #7e7873;
+  cursor: pointer;
+}
+
+.theme-info-detail .check {
+  border: 4px solid #54da71;
+  border-radius: 50%;
+}
+
+.theme-info-detail i {
+  color: #7e7873;
+  cursor: pointer;
+}
+
+.theme-info-detail i:hover {
+  color: lightgray;
+}
+
+.theme-info-detail .theme-info-card--body {
+  background-color: #464646;
+  position: absolute;
+  padding: 0px;
+  left: 40px;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #464646;
+}
+
+.theme-info-detail .theme-info-card--body p {
+  font-weight: 400;
+  color: lightgray;
+  line-height: 1.3rem;
+  padding-top: 24px;
+  padding-left: 8px;
+  padding-right: 40px;
+}
+
+.theme-info-detail div.theme-info-crd--body {
+  background-color: #464646;
+  position: relative;
+}
+
+.theme-info-detail div.theme-card-info--modal {
+  position: absolute;
+  background-color: #2c2c2c;
+  height: 100%;
+  width: 100%;
+  left: -105%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.theme-info-detail div.theme-card-info--modal .accept-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+}
+
+.theme-info-detail div.theme-card-info--modal button {
+  border: 2px solid #2c2c2c;
+  border-radius: 5px;
+  color: lightgray;
+  background-color: transparent;
+  padding: 2px 8px;
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.theme-info-detail div.theme-card-info--modal button:hover {
+  border: 2px solid #7e7873;
+  background-color: #464646;
+  -webkit-transform: translate(1px, -1px);
+          transform: translate(1px, -1px);
+}
+
+.theme-info-detail div.slid-out {
+  left: 0%;
+}
+
+div.theme-info--card {
+  overflow: hidden;
+  background: #464646;
+}
+
+div.theme-info--card:hover .fa-bars {
+  color: #fff;
 }
 /*# sourceMappingURL=analysis.css.map */
