@@ -156,6 +156,14 @@ header .navbar-nav .nav-link {
     padding: 4px 8px;
     margin: 4px 0px;
     border-radius: 0;
+    transition: all .5s;
+    &:hover{
+      outline: 1px solid $green;
+    }
+  }
+  .new-theme{
+    background: transparent;
+    outline: 1px solid $green;
   }
 
 
@@ -370,6 +378,10 @@ i.fa-times {
 .assignment {
   margin-top: 30px;
 }
+#drop-filter,#drop-assign{
+  display: flex;
+  justify-content: space-between;
+}
 
 .btn {
   width: 95%;
@@ -467,6 +479,9 @@ i.fa-times {
   }
   ul li {
     line-height: 35px;
+  }
+  strong{
+    color: $green;
   }
 }
 .market-type ul span {

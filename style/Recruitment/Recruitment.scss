@@ -97,7 +97,7 @@ header .navbar-nav .nav-link {
     color: $green ;
   }
   th{
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-weight: 400;
   }
   thead,
@@ -176,4 +176,9 @@ header .navbar-nav .nav-link {
 .table-2{
   margin: 50px 0px;
 }
+ .table.no-border tr td,
+    .table.no-border tr th {
+      border-width: 0;
+      border-bottom: 1px solid rgba(134, 132, 132, 0.404);
+    }
 

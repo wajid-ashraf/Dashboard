@@ -1,0 +1,397 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+$green: #2dce50;
+$main: #2c2c2c;
+$primary: #464646;
+$secodary: #7e7873;
+$lightsky:rgb(207, 245, 238);
+$text-color:rgb(238, 237, 237);
+$border-color:rgb(177, 174, 174);
+
+body {
+  background-color: $secodary;
+  position: relative;
+  min-height: 1100px;
+  max-width: 1280px;
+  margin: 0px auto;
+}
+
+header .top-nav--box {
+  background-color: $main;
+  position: relative;
+  z-index: 5555;
+}
+
+header .logo img {
+  width: 80px;
+  height: 40px;
+}
+
+header .navbar-nav .nav-link {
+  text-align: center;
+}
+.nav-item {
+  position: relative;
+}
+.activ::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  border-bottom: 3px solid $green;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 5px;
+  bottom: -2px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  line-height: 25px;
+  color: $text-color;
+}
+
+.head-content {
+  width: 100%;
+  background-color: $primary;
+}
+
+.head-content .content {
+  padding-top: 80px;
+
+  @media (max-width: 568px) {
+    padding-top: 50px;
+  }
+}
+
+.head-content .second--nav .nav-link {
+  padding: 3px;
+  margin-right: 40px;
+  font-size: 0.8rem;
+  position: relative;
+
+  @media (max-width: 768px) {
+    margin-right: 20px;
+  }
+}
+
+.head-content .second--nav .nav-link:hover {
+  color: $green;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  border-bottom: 3px solid $green;
+  // left: 5%;
+  right: 5px;
+  bottom: -2px;
+}
+ 
+//   ----- project-covid-19 --------
+.project-covid-19{
+  strong{
+    font-size: 1.5rem;
+  }
+.covid-19-btn{
+ 
+
+  button{
+    padding: 4px 8px;
+    border: 1px solid $border-color;
+    background: $main;
+    color: $secodary;
+    margin-right: 16px;
+    border-radius: 3px;
+    transition: all .5s;
+    outline: 0;
+    &:focus{
+      outline: 0;
+      box-shadow: none;
+    }
+    &:hover{
+      
+      color: $text-color;
+    }
+  }
+  
+  .active-btn{
+    border: 2px solid $green;
+  }
+}
+
+.design-tools{
+  border: 1px solid $border-color;
+  background-color: $main ;
+  div{
+    border: 1px solid $border-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add{
+    background-color: $primary;
+    padding-left: 8px;
+    padding-right: 8px;
+    i{
+      color: $text-color;
+    }
+  }
+  p{
+  
+    color: $secodary;
+    
+  }
+  i{
+    padding: 20px 25px;
+    font-size: 2rem;
+    color: $secodary;
+    cursor: pointer;
+  }
+
+
+
+
+  @media (max-width:768px){
+    .add{
+       padding-left: 15px;
+    padding-right: 15px;
+    }
+   
+    
+    i{
+      padding: 10px 0px;
+      font-size: 1.2rem;
+    }
+    P{
+      font-size: .7rem;
+      padding: 0;
+    }
+  }
+  
+  @media (max-width:576px){
+    div{
+      padding:13px ;
+    }
+    i{
+      padding: 10px 0px;
+      font-size: .8rem;
+    }
+    P{
+      font-size: .6rem;
+      padding: 0;
+    }
+  }
+
+  @media (max-width:400px){
+    div{
+      padding:5px ;
+    }
+    i{
+      padding: 2px 0px;
+      font-size: 1rem;
+    }
+    P{
+      font-size: .5rem;
+      padding: 0;
+    }
+  }
+
+
+.active-tool{
+  border-bottom: 5px solid $green;
+}
+  
+}
+
+
+
+
+
+}
+
+
+
+
+// /////////////////////////////////////
+
+.open-design--board{
+  margin-top: 50px;
+  position: absolute;
+  background-color: $secodary;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  overflow: hidden;
+  transition: all .5s;
+  padding-bottom: 100px;
+ 
+  .head-content{
+  background-color: $primary;
+
+  .design-board--title{
+      font-size: 1.5rem;
+      color: $green;
+
+  }
+
+  }
+
+}
+
+// End design--board
+
+.design-board-page
+{
+  .row{
+    background-color: $main;
+    color: $secodary;
+    border-radius: 5px;
+    margin-top: 80px;
+    position: relative;
+    padding: 0px;
+  }
+  .intro{
+    line-height: 70px;
+    input {
+      padding: 0px 16px;
+    text-align: center;
+    background: transparent !important;
+    color: $secodary;
+    &:focus{
+      outline: 0px;
+    }
+    }
+
+    
+
+  }
+  .instruction{
+    line-height: 30px;
+  }
+  .query{
+    min-height:130px ;
+    position: relative;
+
+    &::after{
+      content: "";
+      position: absolute;
+      right: 50%;
+      top: 100%;
+      height: 85px;
+      border-left: 1px dashed $main;
+
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -84px;
+      height: 85px;
+      border-left: 1px dashed $main;
+
+    }
+    
+
+    .camra{
+      position: absolute;
+      width: 100px;
+      height: 50%;
+      right: 0%;
+      z-index: 5;
+      border: 1px solid $secodary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all .5s;
+      background-color: $primary;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    .rare-camra{
+      bottom: 0.9%;
+    }
+    .open{
+      opacity: 1;
+    }
+
+    
+
+    
+
+    p, img{
+      position: absolute;
+    }
+    img{
+      top: 50%;
+      right: -35px;
+      transform: translateY(-50%);
+      width:25px;
+      height: 25px;
+      @media (max-width:768px) {
+            top: -12px;
+    right: 2px;
+      }
+    
+    }
+    p{
+         top: -11px;
+    left: 0px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #2c2c2c;
+    font-weight: 600;
+     
+    }
+  }
+  
+
+  .add-question{
+    position: absolute;
+    left: 0%;
+    bottom: -20%;
+    // transform: translateX(-25%);
+    text-decoration: none;
+    color: $main;
+   
+    small{
+    font-size: .7rem;
+    font-weight: 700;
+    }
+
+    #add-q{
+      width: 25px;
+    height: 25px;
+    background-color: #7e7873;
+    border-radius: 50%;
+    position: absolute;
+    right: -28px;
+    @media (max-width:768px) {
+             top: 14px;
+    
+}
+      }
+      
+    }
+  }
+  #question:focus .camra{
+    opacity: 1;
+  }
+
+  #question{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: $main;
+    color:$secodary ;
+    line-height: 50px;
+    &:focus{
+      outline: 0px;
+    }
+  }

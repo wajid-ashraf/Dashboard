@@ -102,7 +102,7 @@ header .navbar-nav .nav-link {
 }
 
 .table-box th {
-  color: #fff;
+  color: white;
   font-weight: 400;
 }
 
@@ -195,5 +195,11 @@ header .navbar-nav .nav-link {
 
 .table-2 {
   margin: 50px 0px;
+}
+
+.table.no-border tr td,
+.table.no-border tr th {
+  border-width: 0;
+  border-bottom: 1px solid rgba(134, 132, 132, 0.404);
 }
 /*# sourceMappingURL=Recruitment.css.map */

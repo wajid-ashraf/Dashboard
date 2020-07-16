@@ -168,6 +168,17 @@ header .navbar-nav .nav-link {
   padding: 4px 8px;
   margin: 4px 0px;
   border-radius: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.about-info button:hover {
+  outline: 1px solid #2dce50;
+}
+
+.about-info .new-theme {
+  background: transparent;
+  outline: 1px solid #2dce50;
 }
 
 .head-content .second--nav .nav-link {
@@ -410,6 +421,15 @@ i.fa-times {
   margin-top: 30px;
 }
 
+#drop-filter, #drop-assign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .btn {
   width: 95%;
   background: transparent;
@@ -549,6 +569,10 @@ i.fa-times {
 
 .dropdown-nav ul li {
   line-height: 35px;
+}
+
+.dropdown-nav strong {
+  color: #2dce50;
 }
 
 .market-type ul span {

@@ -128,3 +128,25 @@ $("i.fa-times").click(function (e) {
  $(".chkbox").click(function (e){
   $(this).toggleClass("chked")
 });
+
+ $(document).ready(function() {
+$(".covid-19-btn button").click(function () {
+    $(".covid-19-btn button").removeClass("active-btn");
+    $(this).addClass("active-btn");        
+});
+});
+ 
+$(document).ready(function () {
+$(".design-tools div").click(function () {
+    $(".design-tools div").removeClass("active-tool");
+  $(this).addClass("active-tool");   
+ 
+});
+});
+
+$("#question").on("focusin", function () {
+  $(".query .camra").addClass("open");
+}).on("focusout", function () {
+  
+  $(".query .camra").removeClass("open");
+})
